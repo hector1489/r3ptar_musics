@@ -4,48 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artist Portfolio | Dark Edition</title>
-  <link rel="stylesheet" href="style.css">
+  <title>R3PTAR | MUSIC ARTIST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="background-overlay"></div>
+  <div class="grain-overlay"></div>
+  <div class="ambient-glow"></div>
 
-  <main class="glass-container">
-    <header>
-      <span class="status">● En Gira</span>
-      <h1 class="artist-name">NOME<span>.</span>ARTISTA</h1>
-      <nav class="social-icons">
-        <a href="#">IG</a> / <a href="#">YT</a> / <a href="#">SP</a>
-      </nav>
+  <main class="portfolio-card">
+    <header class="card-header">
+      <span class="badge">Live Session 2026</span>
+      <h1 class="logo">NOME<span class="accent-dot">.</span>ART</h1>
     </header>
 
-    <section class="latest-release">
-      <div class="album-art">
-        <img src="https://via.placeholder.com/300/000000/FFFFFF?text=Album+Art" alt="Portada">
+    <section class="featured-content">
+      <div class="media-container">
+        <img src="https://images.unsplash.com/photo-1515175192010-cf3250992719?q=80&w=1032&auto=format&fit=crop"
+          alt="Portada Sombras Nocturnas" class="cover-art" loading="lazy">
+        <div class="play-trigger" aria-label="Reproducir">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
       </div>
-      <div class="release-info">
+
+      <div class="track-info">
         <p class="label">Último Lanzamiento</p>
-        <h2>SOMBRAS NOCTURNAS</h2>
-        <button class="btn-play">Escuchar Ahora</button>
+        <h2 class="track-title">SOMBRAS NOCTURNAS</h2>
+        <div class="button-group">
+          <a href="#" class="btn btn-primary">Spotify</a>
+          <a href="#" class="btn btn-secondary">YouTube</a>
+        </div>
       </div>
     </section>
 
-    <section class="tour-dates">
-      <h3>Tour 2026</h3>
-      <div class="date-item">
-        <span>15 Abr</span>
-        <span class="city">Santiago, CL</span>
-        <a href="#" class="ticket-link">Tickets</a>
+    <footer class="tour-dates">
+      <h3 class="section-title">Próximos Eventos</h3>
+      <div class="date-row">
+        <span class="date">15 ABR</span>
+        <span class="location">Santiago, CL</span>
       </div>
-      <div class="date-item">
-        <span>22 Abr</span>
-        <span class="city">Buenos Aires, AR</span>
-        <a href="#" class="ticket-link">Tickets</a>
+      <div class="date-row">
+        <span class="date">22 ABR</span>
+        <span class="location">Buenos Aires, AR</span>
       </div>
-    </section>
+    </footer>
   </main>
 </body>
 
